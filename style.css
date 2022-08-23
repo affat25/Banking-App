@@ -1,13 +1,13 @@
-:root{
+:root {
     background: rgb(4,34,134);
     background: linear-gradient(90deg, rgba(4,34,134,0.9959383411567753) 33%, rgba(10,52,162,1) 67%, rgba(9,69,190,1) 100%);
 }
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-body{
+body {
     background: var(--backgroun-color);
     font-family: sans-serif;
     display: flex;
@@ -16,12 +16,75 @@ body{
     justify-content: center;
     height: 100vh;
 }
-a{
+a {
     text-decoration: none;
     outline: none;
 }
-ul li{
+ul li {
     list-style: none;
+    display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
+}
+ul li:hover p {
+    transform: scale(1.2);
+    opacity: 1;
+}
+ul li:hover a {
+    opacity: 1;
+}
+i{
+    color:azure;
+}
+.selector-menu {
+    display:flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.selector-menu a {
+    background: rgb(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 60px;
+}
+.selector-menu a:hover:not(:focus){
+    background: rgb(0,0,0,0.6);
+}
+.selector-menu a:focus{
+    background: rgb(0,0,0,0.9);
+    box-shadow: 0 0 10px 2px rgb(0,0,0,0.6);
+}
+.menu-container{
+    width:300px;
+}
+.header-img{
+    background: url('https://www.menemshasolutions.com/wp-content/uploads/2017/08/Chase_2_Interior_Final.jpg') no-repeat right/cover;
+    height: 150px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    position: relative;
+}
+.overlay{
+    background: rgb(0,0,0,0.2);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.balance{
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.balance h1 {
+    font-size: 1.6rem;
+}
+.balance div{
+    display: flex;
+    align-items: center;
 }
