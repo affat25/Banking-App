@@ -40,7 +40,8 @@ i{
 .selector-menu {
     display:flex;
     align-items: center;
-    margin-top: 25px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .selector-menu a {
     background: rgb(0,0,0,0.3);
@@ -58,7 +59,8 @@ i{
     box-shadow: 0 0 10px 2px rgb(0,0,0,0.6);
 }
 .menu-container{
-    width:300px;
+    width:374px;
+    padding: 0;
 }
 .header-img{
     background: url('https://www.menemshasolutions.com/wp-content/uploads/2017/08/Chase_2_Interior_Final.jpg') no-repeat right/cover;
@@ -87,4 +89,26 @@ i{
 .balance div{
     display: flex;
     align-items: center;
+}
+.balance p{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.list a, .list p{
+    color: #000;
+    opacity: 0.4;
+}
+.item{
+    background: #fff;
+    padding: 20px;
+}
+/*every item that is not last child */
+.item:not(:last-child){
+    border-bottom: 1px solid #dedede;
+}
+.selector-menu a:first-child{
+    border-bottom-left-radius: 10px;
+}
+.selector-menu a:last-child{
+    border-bottom-right-radius: 10px;
 }
