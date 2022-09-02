@@ -8,16 +8,73 @@
       src="https://kit.fontawesome.com/dc5b1351b1.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="/logIn.css" />
     <title>Bank App Log In</title>
   </head>
   <body>
-    <form action="" class="authentication">
-      <section>
-        <input type="text" name="username" id="username" />
-      </section>
-      <section>
-        <input type="text" name="password" id="password" />
-      </section>
-    </form>
+    <div class="content">
+      <div class="header-img"></div>
+      <form action="" class="authentication">
+        <section>
+          <input
+            type="text"
+            name="username"
+            id="user-name"
+            placeholder="Enter User ID"
+            class="user-choice"
+            required
+            minlength="5"
+            maxlength="12"
+            pattern="[a-zA-Z0-9]+ "
+          />
+        </section>
+        <section>
+          <input
+            type="password"
+            name="password"
+            id="user-password"
+            placeholder="Enter Password"
+            class="user-choice"
+            required
+            minlength="8"
+            maxlength="14"
+          />
+        </section>
+        <section>
+          <label for="remember-user" class="toggle">Remember user ID</label>
+          <input
+            type="checkbox"
+            name="rememberUser"
+            id="remember-user"
+            class="user-choice"
+          />
+        </section>
+        <section>
+          <input type="submit" value="Log In" id="log-in" class="user-choice" />
+        </section>
+        <section>
+          <a href="#" class="user-choice" id="forgot"
+            >Forgot Your User ID or Password?</a
+          >
+        </section>
+      </form>
+      <div class="enroll">
+        <a href="#"></a>
+      </div>
+      <div class="help">
+        <a href="#"
+          ><i class="fa-solid fa-phone" alt="Contact Us"></i>
+          <p>Contact Us</p></a
+        >
+        <a href="#"
+          ><i class="fa-solid fa-building-columns" alt="Locations"></i>
+          <p>Locations</p></a
+        >
+        <a href="#"
+          ><i class="fa-solid fa-comment" alt="Feedback"></i>
+          <p>Feedback</p></a
+        >
+      </div>
+    </div>
   </body>
 </html>

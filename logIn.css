@@ -1,0 +1,56 @@
+:root {
+    background: rgb(4,34,134);
+    background: linear-gradient(90deg, rgba(4,34,134,0.9959383411567753) 33%, rgba(10,52,162,1) 67%, rgba(9,69,190,1) 100%);
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: var(--backgroun-color);
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+a {
+    text-decoration: none;
+    outline: none;
+}
+.header-img{
+    background: url('/bank_building.jpg') no-repeat right/cover;
+    height: 150px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    position: relative;
+}
+.content{
+    background: #fff;
+    width: 374px;
+    border-radius: 10px;
+}
+.authentication{
+    border: 1px solid #dedede;
+    margin: 20px;
+    text-align: center;
+}
+.user-choice{
+    margin: 10px;
+}
+#forgot{
+    line-height: 40px;
+}
+.help{
+    padding-left: 47px;
+    border: #dedede;
+}
+.help a{
+    display: inline-block;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+    font-size: small;
+}
