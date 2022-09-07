@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll in Bank</title>
+</head>
+<body>
+    <div class="content">
+        <div class="header-img"></div>
+        <form action="" class="authentication">
+          <section>
+            <input
+              type="text"
+              name="username"
+              id="user-name"
+              placeholder="Enter User ID"
+              class="user-choice"
+              required
+              minlength="5"
+              maxlength="12"
+              pattern="[a-zA-Z0-9]+ "
+            />
+          </section>
+          <section>
+            <input
+              type="password"
+              name="password"
+              id="user-password"
+              placeholder="Enter Password"
+              class="user-choice"
+              required
+              minlength="8"
+              maxlength="14"
+            />
+          </section>
+          <section>
+            <label for="remember-user" class="toggle">Remember user ID</label>
+            <input
+              type="checkbox"
+              name="rememberUser"
+              id="remember-user"
+              class="user-choice"
+            />
+          </section>
+          <section>
+            <input type="submit" value="submit" id="submit" class="user-choice" />
+          </section>
+        </form>
+</body>
+</html>

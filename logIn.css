@@ -43,6 +43,16 @@ a {
 #forgot{
     line-height: 40px;
 }
+.enroll{
+    align-items: center;
+    text-align: center;
+    border: solid 2px #dedede;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+.enroll a p{
+    font-size: small;
+}
 .help{
     padding-left: 47px;
     border: #dedede;
