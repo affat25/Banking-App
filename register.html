@@ -9,7 +9,20 @@
 <body>
     <div class="content">
         <div class="header-img"></div>
-        <form action="" class="authentication">
+        <form action="" class="registration">
+          <section>
+            <input
+              type="text"
+              name="legalname"
+              id="legal-name"
+              placeholder="Enter Legal Name"
+              class="user-choice"
+              required
+              minlength="5"
+              maxlength="12"
+              pattern="[a-zA-Z]+ "
+            />
+          </section>
           <section>
             <input
               type="text"
@@ -36,12 +49,16 @@
             />
           </section>
           <section>
-            <label for="remember-user" class="toggle">Remember user ID</label>
             <input
-              type="checkbox"
-              name="rememberUser"
-              id="remember-user"
+              type="text"
+              name="phonenumber"
+              id="phone-number"
+              placeholder="Enter Phone Number"
               class="user-choice"
+              required
+              minlength="9"
+              maxlength="9"
+              pattern="[0-9]+"
             />
           </section>
           <section>
