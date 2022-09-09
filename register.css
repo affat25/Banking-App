@@ -21,7 +21,7 @@ a {
     outline: none;
 }
 .header-img{
-    background: url('/resources/bank_building.jpg') no-repeat right/cover;
+    background: url('/resources/register_bank_building.jpg') no-repeat right/cover;
     height: 150px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -32,7 +32,7 @@ a {
     width: 374px;
     border-radius: 10px;
 }
-.authentication{
+.registration{
     border: 1px solid #dedede;
     margin: 20px;
     text-align: center;
@@ -40,31 +40,7 @@ a {
 .user-choice{
     margin: 10px;
 }
-#forgot{
-    line-height: 40px;
-}
-.enroll{
-    align-items: center;
-    text-align: center;
-    border: solid 2px #dedede;
-    padding-bottom: 10px;
-    padding-top: 5px;
-}
-.enroll a p{
-    font-size: small;
-}
-.help{
-    padding-left: 47px;
-    border: #dedede;
-}
-.help a{
-    display: inline-block;
-    align-items: center;
-    padding: 15px;
-    text-align: center;
-    font-size: small;
-}
-#log-in{
+#submit{
     background-color: #0096ff;
     border-color: #0096ff;
     cursor: pointer;
