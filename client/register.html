@@ -14,9 +14,20 @@
           <section>
             <input
               type="text"
-              name="legalname"
-              id="legal-name"
-              placeholder="Enter Legal Name"
+              name="firstname"
+              id="first-name"
+              placeholder="Enter First Name"
+              class="user-choice"
+              required
+              minlength="5"
+              maxlength="12"
+              pattern="[a-zA-Z]+ "
+            />
+            <input
+              type="text"
+              name="lastname"
+              id="last-name"
+              placeholder="Enter Last Name"
               class="user-choice"
               required
               minlength="5"
@@ -36,8 +47,6 @@
               maxlength="12"
               pattern="[a-zA-Z0-9]+ "
             />
-          </section>
-          <section>
             <input
               type="password"
               name="password"
@@ -61,12 +70,22 @@
               maxlength="9"
               pattern="[0-9]+"
             />
+            <input
+              type="text"
+              name="emailaddress"
+              id="email-address"
+              placeholder="Enter E-mail Address"
+              class="user-choice"
+              required
+              minlength="8"
+              maxlength="30"
+            />
           </section>
           <section>
             <input
               type="text"
-              name="legalname"
-              id="legal-name"
+              name="address"
+              id="address"
               placeholder="Enter Full Address"
               class="user-choice"
               required

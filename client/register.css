@@ -31,14 +31,19 @@ a {
     background: #fff;
     width: 374px;
     border-radius: 10px;
+    height: 450px;
 }
 .registration{
     border: 1px solid #dedede;
     margin: 20px;
     text-align: center;
+    padding-bottom: 30px;
 }
 .user-choice{
-    margin: 10px;
+    margin: 10px
+}
+#address{
+    width: 313px;
 }
 #submit{
     background-color: #0096ff;
