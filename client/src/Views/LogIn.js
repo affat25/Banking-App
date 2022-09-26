@@ -1,20 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/dc5b1351b1.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="/logIn.css" />
-    <title>Bank App Log In</title>
-  </head>
-  <body>
-    <div class="content">
-      <div class="header-img"></div>
-      <form action="" class="authentication">
+import React from "react";
+
+
+function LogIn(){
+    return(
+    <div className="content" >
+      <div className ="header-img"></div>
+      <form action="" className="authentication">
         <section>
           <input
             type="text"
@@ -41,7 +32,7 @@
           />
         </section>
         <section>
-          <label for="remember-user" class="toggle">Remember user ID</label>
+          <label for="remember-user" className="toggle">Remember user ID</label>
           <input
             type="checkbox"
             name="rememberUser"
@@ -53,31 +44,33 @@
           <input type="submit" value="Log In" id="log-in" class="user-choice" />
         </section>
         <section>
-          <a href="#" class="user-choice" id="forgot"
+          <a href="#" className="user-choice" id="forgot"
             >Forgot Your User ID or Password?</a
           >
         </section>
       </form>
-      <div class="enroll">
+      <div className="enroll">
         <a href="/register.html"
           ><i class="fa-solid fa-pen" alt="Enroll in Bank"></i>
           <p>Enroll</p></a
         >
       </div>
-      <div class="help">
+      <div className="help">
         <a href="#"
           ><i class="fa-solid fa-phone" alt="Contact Us"></i>
           <p>Contact Us</p></a
         >
         <a href="#"
-          ><i class="fa-solid fa-building-columns" alt="Locations"></i>
+          ><i className="fa-solid fa-building-columns" alt="Locations"></i>
           <p>Locations</p></a
         >
         <a href="#"
-          ><i class="fa-solid fa-comment" alt="Feedback"></i>
+          ><i className="fa-solid fa-comment" alt="Feedback"></i>
           <p>Feedback</p></a
         >
       </div>
     </div>
-  </body>
-</html>
+    )
+}
+
+export default LogIn

@@ -1,23 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/register.css">
-    <title>Enroll in Bank</title>
-</head>
-<body>
-    <div class="content">
-        <div class="header-img"></div>
-        <form action="" class="registration">
+import React from "react";
+function Register(){
+    return(
+    <div>
+        <form action="" className="registration">
           <section>
             <input
               type="text"
               name="firstname"
               id="first-name"
               placeholder="Enter First Name"
-              class="user-choice"
+              className="user-choice"
               required
               minlength="5"
               maxlength="12"
@@ -28,7 +20,7 @@
               name="lastname"
               id="last-name"
               placeholder="Enter Last Name"
-              class="user-choice"
+              className="user-choice"
               required
               minlength="5"
               maxlength="12"
@@ -41,7 +33,7 @@
               name="username"
               id="user-name"
               placeholder="Enter User ID"
-              class="user-choice"
+              className="user-choice"
               required
               minlength="5"
               maxlength="12"
@@ -52,7 +44,7 @@
               name="password"
               id="user-password"
               placeholder="Enter Password"
-              class="user-choice"
+              className="user-choice"
               required
               minlength="8"
               maxlength="14"
@@ -64,7 +56,7 @@
               name="phonenumber"
               id="phone-number"
               placeholder="Enter Phone Number"
-              class="user-choice"
+              className="user-choice"
               required
               minlength="9"
               maxlength="9"
@@ -75,7 +67,7 @@
               name="emailaddress"
               id="email-address"
               placeholder="Enter E-mail Address"
-              class="user-choice"
+              className="user-choice"
               required
               minlength="8"
               maxlength="30"
@@ -87,15 +79,18 @@
               name="address"
               id="address"
               placeholder="Enter Full Address"
-              class="user-choice"
+              className="user-choice"
               required
               minlength="15"
               maxlength="25"
             />
           </section>
           <section>
-            <input type="submit" value="submit" id="submit" class="user-choice" />
+            <input type="submit" value="submit" id="submit" className="user-choice" />
           </section>
         </form>
-</body>
-</html>
+    </div>
+    )
+}
+
+export default Register
