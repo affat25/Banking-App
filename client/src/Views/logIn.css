@@ -21,7 +21,7 @@ a {
     outline: none;
 }
 .header-img{
-    background: url('/resources/bank_building.jpg') no-repeat right/cover;
+    background: url('../resources/bank_building.jpg') no-repeat right/cover;
     height: 150px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;

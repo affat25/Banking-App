@@ -16,7 +16,7 @@ body {
     justify-content: center;
     height: 100vh;
 }
-a {
+button {
     text-decoration: none;
     outline: none;
 }
@@ -31,10 +31,10 @@ ul li:hover p {
     transform: scale(1.2);
     opacity: 1;
 }
-ul li:hover a {
+ul li:hover  {
     opacity: 1;
 }
-i{
+button{
     color:azure;
 }
 .selector-menu {
@@ -43,7 +43,7 @@ i{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.selector-menu a {
+.selector-menu button{
     background: rgb(0,0,0,0.3);
     display: flex;
     align-items: center;
@@ -51,10 +51,10 @@ i{
     width: 75px;
     height: 60px;
 }
-.selector-menu a:hover:not(:focus){
+.selector-menu button:hover:not(:focus){
     background: rgb(0,0,0,0.6);
 }
-.selector-menu a:focus{
+.selector-menu button:focus{
     background: rgb(0,0,0,0.9);
     box-shadow: 0 0 10px 2px rgb(0,0,0,0.6);
 }
@@ -94,7 +94,7 @@ i{
     font-size: 1.2rem;
     font-weight: bold;
 }
-.list a, .list p{
+.list button, .list p{
     color: #000;
     opacity: 0.4;
 }
@@ -106,9 +106,9 @@ i{
 .item:not(:last-child){
     border-bottom: 1px solid #dedede;
 }
-.selector-menu a:first-child{
+.selector-menu button:first-child{
     border-bottom-left-radius: 10px;
 }
-.selector-menu a:last-child{
+.selector-menu button:last-child{
     border-bottom-right-radius: 10px;
 }
